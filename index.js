@@ -1,5 +1,4 @@
 import './env.js';
-import 'colors';
 import path from 'path';
 import express from 'express';
 import morgan from 'morgan';
@@ -57,5 +56,5 @@ app.use(errorHandler);
 
 // Log Server Connection
 app.listen(port, () =>
-  console.log(`Server running on port: ${port}`.yellow.bold)
+  console.log(`Server running on port: ${port}`)
 );
